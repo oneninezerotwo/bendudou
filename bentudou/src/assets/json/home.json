@@ -1,0 +1,46 @@
+{
+    
+            "infant":[
+                    { 
+                        "data":[
+                          
+                            {
+                                "control":"保税",
+                                "imgs":"https://img.westwinglife.cn/data/goods/callery/201711/1511170101511_227e30ed88d94199ac9a26811852aad5.jpg_w200",
+                                "title":"Aveeno 艾维诺 婴儿湿疹用保湿沐浴乳 236毫升",
+                                "special":"特价",
+                                "price":"￥55.00",
+                                "zt1":1,
+                                "zt":2
+                            },
+                            {
+                                "control":"直邮",
+                                "imgs":"https://img.westwinglife.cn/data/goods/callery/201808/1534837729848_fd197a9549414beaa3c0decc693a4b8d.jpg_w200",
+                                "title":"LaTourangelle 拉杜蓝乔核桃油 500ml",
+                                "special":"特价",
+                                "price":"￥198",
+                                "zt1":1,
+                                "zt":2
+                            },
+                            {
+                                "control":"直邮",
+                                "imgs":"https://img.westwinglife.cn/data/goods/callery/201811/1543204935224_0d3af5d8213e4ffe8e1c9690f8499760.jpg_w200",
+                                "title":"雅培Abbott澳版小安素营养粉香草850g",
+                                "special":"特价",
+                                "price":"￥278",
+                                "zt1":1,
+                                "zt":2
+                            },
+                            {
+                                "control":"一般贸易",
+                                "imgs":"https://img.westwinglife.cn/data/goods/callery/201901/1546939597055_18ff974d6b7a414c823d36128e5b488e.jpeg_w200",
+                                "title":"加拿大George’s 乔治霜 长效保湿霜特效干性皮肤霜450g",
+                                "special":"特价",
+                                "price":"￥198",
+                                "zt1":1,
+                                "zt":2
+                            }
+                        ]
+                    }
+    ]
+}

@@ -8,10 +8,10 @@ import Thome from './view/Thome'
 
 
 //二级路由
-import Thomes from './components/Thomes'
-import Tclsify from './components/Tclsify'
-import Tcar from './components/Tcar'
-import Tmine from './components/Tmine'
+import Thomes from './view/home/Thomes'
+import Tclsify from './view/home/Tclsify'
+import Tcar from './view/home/Tcar'
+import Tmine from './view/home/Tmine'
 
 const router = new VueRouter({
     routes: [
