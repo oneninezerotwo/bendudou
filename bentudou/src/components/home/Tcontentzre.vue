@@ -1,10 +1,12 @@
 <template>
-    
-    <div id="car">
-               <!-- <div class="car">
-                    <img :src="car" alt="" class="car_img">
-                   <div>
-                       <ul v-if="contents">
+    <div id="Tcontentzre">
+                    <div class="ttitle">
+                            <p>笨土豆精选</p>
+                            <span></span>
+                    </div>
+
+                    <div>
+                        <ul>
                             <li v-for="(a,index) in contents" :key="index">
                                 <span class="dinwei" v-text="a.control" :class='
                                 a.zt>"1"?a.zt=="3"?"yellows":"purples":"greens"'></span>
@@ -17,82 +19,52 @@
                                 <div class="canku">
                                     <img :src="a.mimgse" alt="">
                                     <span v-text="a.froms">
+                                      
                                     </span>
                                 </div>
                             </li>
-                        </ul>
-                   </div>
-             </div>        -->
-             <div class="cars">
-                    <van-card
-                            v-for="(ab,index) in contents"
-                            :key="index"
-                            num="2"
-                            tag="标签"
-                            price="2.00"
-                            desc="描述信息"  
-                            title="商品标题"
-                            :thumb="ab.imgages"
-                            origin-price="10.00"
-                            class="vancard"
-                            >
                             
-                            <div slot="footer" class="footer">
-                                <van-button size="mini" class="jian">-</van-button>
-                                 <input class="radios" type="checkbox">
-                                   
-                                <input type="text" value="2">
-                                <van-button size="mini" class="jia">+</van-button>
-                            </div>
-                  </van-card>
-                 <Tclose  class="closse"/>
-             </div>
-              
+                        </ul>
+                    </div>
     </div>
 </template>
+
 <script>
-import car from '../../assets/car.png'
-import Tclose from  '../../components/car/Tclose'
 export default {
         data(){
             return{
-                car,
-                 contents:[]
+                contents:[]
             }
         },
-        async created(){
+            async created(){
                     let {data} = await this.$axios.get('/api/home1',{
 
                     })
                         this.contents = [...data.data]                 
-        },
-        components:{
-            Tclose
-        },
-        methods:{
-
         }
-
-
 }
 </script>
 
 <style  lang="scss" scoped>
-
-#car{
-    margin-top: 50px;
-    display: flex;
-    
-    .car{
-        background: #f8f8f8;
-        margin-bottom: 1.324074rem;
-        .car_img{
-            height: 4.898148rem;
-            width: 100%;
-            margin-top: .092593rem;
+#Tcontentzre{
+    .ttitle{
+        text-align: center;
+        height: 1.851852rem;
+        p{
+                color: #2a2a2a;
+                font-size: .518519rem;
         }
-        div{
-             ul{
+        span{
+            display:inline-block;
+             width: 103px;
+             height: 5px;
+            border-radius: .212963rem;
+            background: #eaeaea;
+        }
+    }
+    div{
+        
+        ul{
                 display: flex;
                 justify-content:space-around;
                 flex-wrap: wrap;
@@ -171,57 +143,9 @@ export default {
             }
         }
 
-        }
-    }
-    .cars{
-        width: 100%;
-         margin-bottom: 1.324074rem;
-         .closse{
-             height: 87px;
-         }
-        .vancard{
-
-           
-          .footer{
-               .radios{
-                   width: 14px;
-                   height: 14px;
-                   border-radius: 50%;
-                   border: 1px solid #e5e5e5;
-                   position: absolute;
-                    left: 10px;
-                    top: 46px
-            }
-           input{
-                width: 1.351852rem;
-                text-align: center;
-                outline: none;
-                -webkit-appearance: none;
-                border-radius: 0;
-                border: 1px;
-                // margin-top: .092593rem;
-                // border-top:1px solid #ccc;
-                //  border-bottom:1px solid #ccc;
-                     border-top: 1px solid #ebedf0;
-                      border-bottom: 1px solid #ebedf0;
-                      height: 20px;
-                      line-height: 20px;
-           }
-           .jia{
-               margin: 0;
-              border-top-right-radius: 10px; 
-                border-bottom-right-radius: 10px; 
-           }
-           .jian{
-               margin: 0;
-               
-                 border-top-left-radius: 10px; 
-               border-bottom-left-radius: 10px; 
-           }
-        }
-        }
     }
 }
+
 
 </style>
 

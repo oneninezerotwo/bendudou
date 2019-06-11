@@ -1,11 +1,20 @@
 <template>
     
-    <div id="Theader">
+    <div id="Theader" v-if="!(names()=='分类')">
             <div id="herder">
-            <div id="logo1">
+            <div id="logo1" v-show="shows()">
                 <img :src="logo1" alt="">
             </div>
-            <div id="logo">
+            <div v-show="!shows()" class="jiantou zi">
+                    <img :src="goto" alt="" v-show="names()=='购物车'&&names()=='我的'">
+            </div>
+            <div v-show="!shows()" class="titles zi" v-text="names()">
+                
+            </div>
+            <div v-show="!shows()" class="jiantou zi">
+                
+            </div>
+            <div id="logo" v-show="shows()">
                 <img :src="logo" alt="">
             </div>
             </div>
@@ -19,12 +28,34 @@
 <script>
 import logo1 from '../assets/logo1.jpg'
 import logo from '../assets/logo.jpg'
+import goto from '../assets/goto.png'
 export default {
     data(){
         return{
             logo1,
-            logo
+            logo,
+            goto,
+            // shows:'',
+            titless:''
         }
+    },
+    created(){
+      
+            
+            
+    },
+    methods:{
+        shows(){
+            return  this.$store.state.shows
+        },
+        names(){
+           return this.$store.state.names
+        }
+        
+    },
+    mounted(){
+        // this.titless = this.$store.state.names
+        // console.log(this.titless)
     }
 }
 </script>
@@ -40,6 +71,7 @@ export default {
     // background: red;
     color: white;
     text-align: center;
+    padding: .092593rem;
     #herder{
         display: flex;
         #logo1{
@@ -61,6 +93,20 @@ export default {
 
             }
         }
+        .titles{
+                flex: 6;
+                text-align:center;
+                
+               
+    }   
+    .jiantou{
+            flex: 2;
+    }
+    .zi{
+        color: #252525;
+         font-size: .546296rem;
+         height: 100%;
+    }
     }
     
 }

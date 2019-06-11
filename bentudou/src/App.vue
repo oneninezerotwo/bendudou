@@ -9,6 +9,11 @@
 export default {
   name: 'app',
 
+
+  // created(){
+  //           console.log(this.$store.state.shows)
+  // }
+
 }
 </script>
 
@@ -16,5 +21,8 @@ export default {
 *{
   margin: 0;
   padding: 0;
+}
+ul,li{
+  list-style: none;
 }
 </style>

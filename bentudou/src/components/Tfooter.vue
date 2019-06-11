@@ -1,7 +1,7 @@
 <template>
   <div class="weui-tabbar">
     <a
-      @click="toTab(index)"
+     
       v-for="(t,index) in tabbar"
       :key="index"
       href="javascript:;"
@@ -9,6 +9,7 @@
       :class="{
         'weui-bar__item_on':tab===index
       }"
+       @click="toTab(index,t.title)"
     >
       <span style="display: inline-block;position: relative;">
         <img :src="t.images" alt class="weui-tabbar__icon">
@@ -41,7 +42,7 @@ export default {
       tabbar: [
         {
           title: "首页",
-          badge: 8,
+          badge: 0,
           isBadge: false,
           name: "Thomes",
           images: shouye
@@ -57,7 +58,7 @@ export default {
         {
           title: '购物车',
           badge: 0,
-          isBadge: true,
+          isBadge: false,
           name: "Tcar",
           images: gouwu
         },
@@ -70,18 +71,39 @@ export default {
         }
       ],
       // 默认的下标值
-      tab: 0
+      tab: 0,
+      shows:true,
+      // name:''
     };
   },
   methods: {
     // 切换底部选项卡
-    toTab(tab) {
+    toTab(tab,names) {
       this.tab = tab;
       // 获取当前的tab的name值
       let name = this.tabbar[tab].name;
       // 跳路由
       this.$router.push({ name });
-    }
+      // console.log(tab)
+      if(tab=='0'){
+          this.$store.state.shows = this.shows
+          this.$store.state.names = names
+          
+       }else if(tab=='1'){
+          this.$store.state.shows = this.shows
+          this.$store.state.names = names
+           
+       }else if(tab=='2'){
+        this.$store.state.shows = !this.shows
+        this.$store.state.names = names
+         
+       }else if(tab=='3'){
+         this.$store.state.shows = !this.shows
+         this.$store.state.names = names
+         
+       }
+    },
+    
   },
   props: {
     msg: String

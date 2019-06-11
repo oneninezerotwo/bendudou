@@ -1,7 +1,7 @@
 <template>
     <div>
         <Theader />
-         <router-view></router-view>
+        <keep-alive> <router-view></router-view></keep-alive> 
         <Tfooter />
     </div>
 </template>
