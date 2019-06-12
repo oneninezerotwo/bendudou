@@ -1,6 +1,5 @@
 <template>
     <div id="content">
-<<<<<<< HEAD
         <div class="xuanhuan" v-for="(img,index) in img" :key="index">
             <div class="contengt_img">
                 <img :src="img.datu" alt="">
@@ -24,34 +23,10 @@
             </ul>
         </div>
         </div>
-=======
-        <div class="contengt_img">
-                <img :src="datu" alt="">
-        </div>
-        <div class="content_min">
-            <ul>
-                <li>
-                    <span class="declare">
-                        保税
-                    </span>
-                    <img src="https://img.westwinglife.cn/data/goods/callery/201711/1511170101511_227e30ed88d94199ac9a26811852aad5.jpg_w200" alt="">
-                    <p><a href="">Aveeno 艾维诺 婴儿湿疹用保湿沐浴乳 236毫升</a></p>
-                    <div>
-                        <span>特价</span>
-                        <span class="price">￥55.00</span>
-                    </div>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
->>>>>>> Heyvens
     </div>
 </template>
 <script>
 import datu from '../../assets/images/home/datu1.png'
-<<<<<<< HEAD
 import datu1 from '../../assets/images/home/datu2.png'
 import datu2 from '../../assets/images/home/datu3.png'
 export default {
@@ -80,19 +55,6 @@ export default {
 
                     this.homedata = [...data.data]
                    
-=======
-export default {
-        data(){
-            return{
-                datu
-            }
-        },
-            async created(){
-                       let data = await this.$axios.get('/api/Navigation/findNavigation.htm',{
-
-            })
-            console.log(data)
->>>>>>> Heyvens
             }
 }
 </script>
@@ -103,12 +65,8 @@ export default {
      overflow-x: auto;
      overflow-y: hidden;
     width: 100%;
-<<<<<<< HEAD
         .xuanhuan{
             .contengt_img{
-=======
-        .contengt_img{
->>>>>>> Heyvens
                img{
                     height: 2.611111rem;
                     width: 100%;
@@ -138,16 +96,11 @@ export default {
                         top: 10px;
                         // width: .814815rem;
                         // height: .388889rem;
-<<<<<<< HEAD
                        
-=======
-                        background: #8abc41;
->>>>>>> Heyvens
                         padding: .046296rem;
                         color: white;
                         line-height: .388889rem;
                     }
-<<<<<<< HEAD
                     .greens{
                          background: #8abc41;
                     }
@@ -157,8 +110,6 @@ export default {
                     .purples{
                         background: #a670c6;
                     }
-=======
->>>>>>> Heyvens
                     img{
                         width: 2.157407rem;
                         height: 2.435185rem;
@@ -177,11 +128,7 @@ export default {
                         }
                     }
                     div{
-<<<<<<< HEAD
                          margin-top: .092593rem;
-=======
-                        margin-top: .092593rem;
->>>>>>> Heyvens
                          color: #178347;
                           font-size: .462963rem;
                         span{
@@ -190,11 +137,7 @@ export default {
                         }
                         .price{
                             color: #178347;
-<<<<<<< HEAD
                             font-size: .362963rem;
-=======
-                              font-size: .462963rem;
->>>>>>> Heyvens
                            
                         }
                     }
@@ -203,10 +146,7 @@ export default {
             }
            
         }
-<<<<<<< HEAD
         }
-=======
->>>>>>> Heyvens
 }
 
 </style>

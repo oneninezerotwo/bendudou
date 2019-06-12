@@ -1,18 +1,4 @@
 <template>
-<<<<<<< HEAD
-    
-    <div id='mine'>
-        我的
-    </div>
-</template>
-<style lang="scss" scoped>
-
-#mine{
-    display: flex;
-    margin-top: 50px;
-}
-
-=======
   <div data-v-bc186c1a class="app-view-wrapper">
     <!---->
     <div data-v-172bb70c data-v-bc186c1a class="content app-view app-view-with-footer">
@@ -101,7 +87,7 @@
   </div>
 </template>
 <script>
-import TyouhuiVue from '../../components/Tyouhui.vue';
+// import TyouhuiVue from '../../components/Tyouhui.vue';
 export default {
   data() {
     return {
@@ -352,5 +338,4 @@ export default {
   font-style: normal;
   color: rgba(0, 0, 0, 0.87);
 }
->>>>>>> Heyvens
 </style>

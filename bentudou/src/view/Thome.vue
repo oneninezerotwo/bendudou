@@ -1,11 +1,7 @@
 <template>
     <div>
         <Theader />
-<<<<<<< HEAD
         <keep-alive> <router-view></router-view></keep-alive> 
-=======
-         <router-view></router-view>
->>>>>>> Heyvens
         <Tfooter />
     </div>
 </template>

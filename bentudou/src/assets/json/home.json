@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> Heyvens
 {
     
             "infant":[
                     { 
-<<<<<<< HEAD
                        
-=======
->>>>>>> Heyvens
                         "data":[
                           
                             {
@@ -17,14 +10,8 @@
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201711/1511170101511_227e30ed88d94199ac9a26811852aad5.jpg_w200",
                                 "title":"Aveeno 艾维诺 婴儿湿疹用保湿沐浴乳 236毫升",
                                 "special":"特价",
-<<<<<<< HEAD
                                 "price":"￥55",
                                 "zt":0
-=======
-                                "price":"￥55.00",
-                                "zt1":1,
-                                "zt":2
->>>>>>> Heyvens
                             },
                             {
                                 "control":"直邮",
@@ -32,27 +19,15 @@
                                 "title":"LaTourangelle 拉杜蓝乔核桃油 500ml",
                                 "special":"特价",
                                 "price":"￥198",
-<<<<<<< HEAD
                                 "zt":3
-=======
-                                "zt1":1,
-                                "zt":2
->>>>>>> Heyvens
                             },
                             {
                                 "control":"直邮",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201811/1543204935224_0d3af5d8213e4ffe8e1c9690f8499760.jpg_w200",
                                 "title":"雅培Abbott澳版小安素营养粉香草850g",
-<<<<<<< HEAD
                                 "special":"",
                                 "price":"￥278",
                                 "zt":3
-=======
-                                "special":"特价",
-                                "price":"￥278",
-                                "zt1":1,
-                                "zt":2
->>>>>>> Heyvens
                             },
                             {
                                 "control":"一般贸易",
@@ -60,7 +35,6 @@
                                 "title":"加拿大George’s 乔治霜 长效保湿霜特效干性皮肤霜450g",
                                 "special":"特价",
                                 "price":"￥198",
-<<<<<<< HEAD
                                 "zt":2
                             }
                         ]
@@ -217,12 +191,4 @@
                 "imgages":"https://img.westwinglife.cn/data/goods/callery/201707/1500535729394_393f0a6dc68c4cacaedd30c1843ec88b.jpg_w200"
             }
         ]
-=======
-                                "zt1":1,
-                                "zt":2
-                            }
-                        ]
-                    }
-    ]
->>>>>>> Heyvens
 }

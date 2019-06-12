@@ -9,36 +9,21 @@ import axios from 'axios'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import 'weui'
-<<<<<<< HEAD
 import store from './store'
+import 'Vant'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 import { Search,Swipe, SwipeItem} from 'mint-ui'
 import {Card } from 'vant';
-
-Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem).use(Vant).use(Card)
-=======
-import 'Vant' 
-
-import 'vant/lib/index.css';
-
-import { Search,Swipe, SwipeItem} from 'mint-ui'
-
-Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem)
-
 import { CouponCell, CouponList } from 'vant';
 
-Vue.use(CouponCell).use(CouponList);
->>>>>>> Heyvens
-
+Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem).use(Vant).use(Card).use(SwipeItem).use(CouponCell).use(CouponList);
+ 
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false
 
 new Vue({
-<<<<<<< HEAD
   store,
-=======
->>>>>>> Heyvens
   router,
   render: h => h(App),
 }).$mount('#app')

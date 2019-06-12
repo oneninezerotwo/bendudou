@@ -1,6 +1,5 @@
 <template>
     
-<<<<<<< HEAD
     <div id="Theader" v-if="!(names()=='分类')">
             <div id="herder">
             <div id="logo1" v-show="shows()">
@@ -16,14 +15,6 @@
                 
             </div>
             <div id="logo" v-show="shows()">
-=======
-    <div id="Theader">
-            <div id="herder">
-            <div id="logo1">
-                <img :src="logo1" alt="">
-            </div>
-            <div id="logo">
->>>>>>> Heyvens
                 <img :src="logo" alt="">
             </div>
             </div>
@@ -37,15 +28,11 @@
 <script>
 import logo1 from '../assets/logo1.jpg'
 import logo from '../assets/logo.jpg'
-<<<<<<< HEAD
 import goto from '../assets/goto.png'
-=======
->>>>>>> Heyvens
 export default {
     data(){
         return{
             logo1,
-<<<<<<< HEAD
             logo,
             goto,
             // shows:'',
@@ -69,10 +56,6 @@ export default {
     mounted(){
         // this.titless = this.$store.state.names
         // console.log(this.titless)
-=======
-            logo
-        }
->>>>>>> Heyvens
     }
 }
 </script>
@@ -88,10 +71,7 @@ export default {
     // background: red;
     color: white;
     text-align: center;
-<<<<<<< HEAD
     padding: .092593rem;
-=======
->>>>>>> Heyvens
     #herder{
         display: flex;
         #logo1{
@@ -113,7 +93,6 @@ export default {
 
             }
         }
-<<<<<<< HEAD
         .titles{
                 flex: 6;
                 text-align:center;
@@ -128,8 +107,6 @@ export default {
          font-size: .546296rem;
          height: 100%;
     }
-=======
->>>>>>> Heyvens
     }
     
 }

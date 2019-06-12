@@ -4,10 +4,7 @@
             <Tswipe />
             <Tregister />
             <Tcontent />
-<<<<<<< HEAD
             <Tcontentzre />
-=======
->>>>>>> Heyvens
     </div>
 </template>
 
@@ -17,10 +14,7 @@ import  Tsearch from '../../components/home/Tsearch'
 import  Tswipe from '../../components/home/Tswipe'
 import  Tregister from '../../components/home/Tregister'
 import  Tcontent from '../../components/home/Tcontent'
-<<<<<<< HEAD
 import  Tcontentzre from '../../components/home/Tcontentzre'
-=======
->>>>>>> Heyvens
 export default {
     data(){
         return{
@@ -31,12 +25,9 @@ export default {
         Tsearch,
         Tswipe,
         Tregister,
-<<<<<<< HEAD
         Tcontent,
-        Tcontentzre
-=======
+        Tcontentzre,
         Tcontent
->>>>>>> Heyvens
     }
 }
 </script>

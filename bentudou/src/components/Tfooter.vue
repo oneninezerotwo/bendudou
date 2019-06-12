@@ -1,11 +1,7 @@
 <template>
   <div class="weui-tabbar">
     <a
-<<<<<<< HEAD
      
-=======
-      @click="toTab(index)"
->>>>>>> Heyvens
       v-for="(t,index) in tabbar"
       :key="index"
       href="javascript:;"
@@ -13,10 +9,7 @@
       :class="{
         'weui-bar__item_on':tab===index
       }"
-<<<<<<< HEAD
        @click="toTab(index,t.title)"
-=======
->>>>>>> Heyvens
     >
       <span style="display: inline-block;position: relative;">
         <img :src="t.images" alt class="weui-tabbar__icon">
@@ -49,11 +42,7 @@ export default {
       tabbar: [
         {
           title: "首页",
-<<<<<<< HEAD
           badge: 0,
-=======
-          badge: 8,
->>>>>>> Heyvens
           isBadge: false,
           name: "Thomes",
           images: shouye
@@ -69,11 +58,7 @@ export default {
         {
           title: '购物车',
           badge: 0,
-<<<<<<< HEAD
           isBadge: false,
-=======
-          isBadge: true,
->>>>>>> Heyvens
           name: "Tcar",
           images: gouwu
         },
@@ -86,28 +71,19 @@ export default {
         }
       ],
       // 默认的下标值
-<<<<<<< HEAD
       tab: 0,
       shows:true,
       // name:''
-=======
-      tab: 0
->>>>>>> Heyvens
     };
   },
   methods: {
     // 切换底部选项卡
-<<<<<<< HEAD
     toTab(tab,names) {
-=======
-    toTab(tab) {
->>>>>>> Heyvens
       this.tab = tab;
       // 获取当前的tab的name值
       let name = this.tabbar[tab].name;
       // 跳路由
       this.$router.push({ name });
-<<<<<<< HEAD
       // console.log(tab)
       if(tab=='0'){
           this.$store.state.shows = this.shows
@@ -128,9 +104,6 @@ export default {
        }
     },
     
-=======
-    }
->>>>>>> Heyvens
   },
   props: {
     msg: String
