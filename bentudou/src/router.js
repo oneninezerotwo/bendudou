@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 import Thome from './view/Thome'
 
-
+import Tlogin from './view/Tlogin'
 //二级路由
 import Thomes from './view/home/Thomes'
 import Tclsify from './view/home/Tclsify'
@@ -45,7 +45,10 @@ const router = new VueRouter({
             name:'Tmine'
           }
         ]
-      }
+      },
+      { path: '/Tlogin',
+       component: Tlogin,
+       name:'Tlogin'}
     
     ]
   })

@@ -36,7 +36,7 @@ export default {
             logo,
             goto,
             // shows:'',
-            titless:''
+            titless:true
         }
     },
     created(){

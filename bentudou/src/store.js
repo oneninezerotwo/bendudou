@@ -6,8 +6,9 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
     state:{
-            shows:false,
-            names:""
+            shows:true,
+            names:"",
+            namess:""
     }
 })
 
