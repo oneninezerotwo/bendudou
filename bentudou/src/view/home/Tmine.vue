@@ -94,11 +94,6 @@ export default {
     };
   },
   methods: {
-    showList() {
-      this.$router.push({
-        path:'Tyouhui'
-      })
-    }
   }
 };
 </script>

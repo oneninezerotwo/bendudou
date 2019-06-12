@@ -1,7 +1,7 @@
 <template>
     <div id="Tsearch">
                 <mt-search
-                  v-model="value"
+                 
                 cancel-text="取消"
                 placeholder="水宝宝"
                 >
@@ -31,19 +31,15 @@ export default {
 .mint-search{
     width: 100%;
     // height: 83px;
+  }
 }
-}
-
-
 </style>
 <script>
 export default {
-    data(){
-        return {
-
-        }
-    }
-}
+  data() {
+    return {};
+  }
+};
 </script>
 
 

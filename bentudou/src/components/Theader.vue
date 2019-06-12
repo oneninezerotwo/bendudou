@@ -1,24 +1,19 @@
 <template>
-    
-    <div id="Theader" v-if="!(names()=='分类')">
-            <div id="herder">
-            <div id="logo1" v-show="shows()">
-                <img :src="logo1" alt="">
-            </div>
-            <div v-show="!shows()" class="jiantou zi">
-                    <img :src="goto" alt="" v-show="names()=='购物车'&&names()=='我的'">
-            </div>
-            <div v-show="!shows()" class="titles zi" v-text="names()">
-                
-            </div>
-            <div v-show="!shows()" class="jiantou zi">
-                
-            </div>
-            <div id="logo" v-show="shows()">
-                <img :src="logo" alt="">
-            </div>
-            </div>
+  <div id="Theader" v-if="!(names()=='分类')">
+    <div id="herder">
+      <div id="logo1" v-show="shows()">
+        <img :src="logo1" alt>
+      </div>
+      <div v-show="!shows()" class="jiantou zi">
+        <img :src="goto" alt v-show="names()=='购物车'&&names()=='我的土豆'">
+      </div>
+      <div v-show="!shows()" class="titles zi" v-text="names()"></div>
+      <div v-show="!shows()" class="jiantou zi"></div>
+      <div id="logo" v-show="shows()">
+        <img :src="logo" alt>
+      </div>
     </div>
+  </div>
 </template>
 
 
@@ -26,38 +21,33 @@
 
 
 <script>
-import logo1 from '../assets/logo1.jpg'
-import logo from '../assets/logo.jpg'
-import goto from '../assets/goto.png'
+import logo1 from "../assets/logo1.jpg";
+import logo from "../assets/logo.jpg";
+import goto from "../assets/goto.png";
 export default {
-    data(){
-        return{
-            logo1,
-            logo,
-            goto,
-            // shows:'',
-            titless:true
-        }
+  data() {
+    return {
+      logo1,
+      logo,
+      goto,
+      // shows:'',
+      titless: true
+    };
+  },
+  created() {},
+  methods: {
+    shows() {
+      return this.$store.state.shows;
     },
-    created(){
-      
-            
-            
-    },
-    methods:{
-        shows(){
-            return  this.$store.state.shows
-        },
-        names(){
-           return this.$store.state.names
-        }
-        
-    },
-    mounted(){
-        // this.titless = this.$store.state.names
-        // console.log(this.titless)
+    names() {
+      return this.$store.state.names;
     }
-}
+  },
+  mounted() {
+    // this.titless = this.$store.state.names
+    // console.log(this.titless)
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -103,15 +93,20 @@ export default {
     .jiantou{
             flex: 2;
     }
-    .zi{
-        color: #252525;
-         font-size: .546296rem;
-         height: 100%;
+    .titles {
+      flex: 6;
+      text-align: center;
     }
+    .jiantou {
+      flex: 2;
     }
-    
+    .zi {
+      color: #252525;
+      font-size: 0.546296rem;
+      height: 100%;
+    }
+  }
 }
-
 </style>
 
 
