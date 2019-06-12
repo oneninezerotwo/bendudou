@@ -1,42 +1,34 @@
 <template>
-    <div id="Tsearch">
-                <mt-search
-               
-                cancel-text="取消"
-                placeholder="水宝宝">
-                 <!-- v-model="value" -->
-                <!-- <mt-cell
+  <div id="Tsearch">
+    <mt-search cancel-text="取消" placeholder="水宝宝">
+      <!-- v-model="value" -->
+      <!-- <mt-cell
                     v-for="item in result"
                     :title="item.title"
                     :value="item.value">
-  </mt-cell> -->
-</mt-search>
-
-    </div>
+      </mt-cell>-->
+    </mt-search>
+  </div>
 </template>
 
 <style  lang="scss" scoped>
-#Tsearch{
-    width: 100%;
-    margin: .296296rem 0 .185185rem 0;
-    // height: .462963rem;
-    height: 50px;
-.mint-search{
+#Tsearch {
+  width: 100%;
+//   margin: 0.296296rem 0 0.185185rem 0;
+  // height: .462963rem;
+  height: 50px;
+  .mint-search {
     width: 100%;
     // height: 83px;
+  }
 }
-}
-
-
 </style>
 <script>
 export default {
-    data(){
-        return {
-
-        }
-    }
-}
+  data() {
+    return {};
+  }
+};
 </script>
 
 

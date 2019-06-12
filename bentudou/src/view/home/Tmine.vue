@@ -52,9 +52,6 @@
             href="###"
             class
             data-stat-id="30d39469c9f405e6"
-            :coupons="coupons"
-            :chosen-coupon="chosenCoupon"
-            @click="showList()"
           >
             <cite data-v-172bb70c>我的优惠</cite>
           </a>
@@ -91,17 +88,9 @@
 export default {
   data() {
     return {
-      chosenCoupon: -1,
-      coupons: [coupon],
-      disabledCoupons: [coupon]
     };
   },
   methods: {
-    showList() {
-      this.$router.push({
-        path:'Tyouhui'
-      })
-    }
   }
 };
 </script>
