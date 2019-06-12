@@ -68,10 +68,11 @@ export default {
     left: 0;
     height: 50px;
     width: 100%;
-    // background: red;
+    background: white;
     color: white;
     text-align: center;
     padding: .092593rem;
+    z-index: 20;
     #herder{
         display: flex;
         #logo1{

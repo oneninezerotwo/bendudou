@@ -13,11 +13,11 @@ import store from './store'
 import 'Vant'
 import Vant from 'vant';
 import 'vant/lib/index.css';
-import { Search,Swipe, SwipeItem} from 'mint-ui'
-import {Card } from 'vant';
-import { CouponCell, CouponList } from 'vant';
+import { Search,Swipe, SwipeItem } from 'mint-ui'
 
-Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem).use(Vant).use(Card).use(SwipeItem).use(CouponCell).use(CouponList);
+import { CouponCell, CouponList,Card} from 'vant';
+
+Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem).use(Vant).use(Card).use(SwipeItem).use(CouponCell).use(CouponList).use(Search.name)
  
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false

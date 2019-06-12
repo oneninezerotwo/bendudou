@@ -31,15 +31,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-.close{
-    height: 87px;
-    .closest{
-        bottom:1.324074rem;
-    }
-    .checkeds{
-        margin-left: .277778rem;
-    }
-}
+
 
 </style>
 

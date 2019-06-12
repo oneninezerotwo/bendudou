@@ -14,7 +14,7 @@
                                 <p><a href="">Michael Kors  迈克高仕 女士时尚马鞍包单肩包斜挎包 黑色 30H6TUZM2L</a></p>
                                 <div>
                                     <span class="tejia" v-text="a.special" v-if="a.special"></span>
-                                    <span class="price" v-text="a.price"></span>
+                                    <span class="pricess" v-text="a.price"></span>
                                 </div>
                                 <div class="canku">
                                     <img :src="a.mimgse" alt="">
@@ -116,7 +116,7 @@ export default {
                               color: #ae1033;
                            font-size: .277778rem;
                           }
-                        .price{
+                        .pricess{
                              color: #178347;
                             font-size: .362963rem;
                         }

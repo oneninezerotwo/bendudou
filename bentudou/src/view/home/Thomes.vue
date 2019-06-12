@@ -26,8 +26,8 @@ export default {
         Tswipe,
         Tregister,
         Tcontent,
-        Tcontentzre,
-        Tcontent
+        Tcontentzre
+    
     }
 }
 </script>
@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 
 #home{
-    margin-top: .925926rem;
+    margin-top: 1.3225926rem;
     display: flex;
     width: 100%;
     flex-direction:column;

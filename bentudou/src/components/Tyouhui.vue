@@ -6,8 +6,8 @@
         :coupons="coupons"
         :chosen-coupon="chosenCoupon"
         :disabled-coupons="disabledCoupons"
-        @change="onChange"
-        @exchange="onExchange"
+        @exchange="onExchange(coupons)"
+        @click="togo()"
       />
     </van-popup>
   </div>
@@ -20,16 +20,21 @@ export default {
       chosenCoupon: -1,
       coupons: [coupon],
       disabledCoupons: [coupon],
-   
+      showList:true
     };
   },
   methods: {
-    onChange(index) {
-      this.showList = false;
-      this.chosenCoupon = index;
-    },
-    onExchange(code) {
+    // onChange(index) {
+    //   this.showList = false;
+    //   this.chosenCoupon = index;
+    // },
+    onExchange(coupon) {
       this.coupons.push(coupon);
+    },
+    togo(){
+      this.$router.push({
+        path:"/Tmine"
+      })
     }
   }
 };

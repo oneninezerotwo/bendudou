@@ -8,7 +8,8 @@ const store = new Vuex.Store({
     state:{
             shows:true,
             names:"",
-            namess:""
+            namess:"",
+            // shangping:[]
     }
 })
 

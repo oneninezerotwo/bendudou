@@ -52,8 +52,8 @@
             href="###"
             class
             data-stat-id="30d39469c9f405e6"
-            :coupons="coupons"
-            :chosen-coupon="chosenCoupon"
+            
+          
             @click="showList()"
           >
             <cite data-v-172bb70c>我的优惠</cite>
@@ -87,13 +87,10 @@
   </div>
 </template>
 <script>
-// import TyouhuiVue from '../../components/Tyouhui.vue';
 export default {
   data() {
     return {
-      chosenCoupon: -1,
-      coupons: [coupon],
-      disabledCoupons: [coupon]
+     
     };
   },
   methods: {
@@ -324,7 +321,7 @@ export default {
   padding-right: 0.56rem;
   padding-left: 1.12rem;
   height: 1.04rem;
-  display: box;
+  
   display: -webkit-box;
   box-align: center;
   -webkit-box-align: center;

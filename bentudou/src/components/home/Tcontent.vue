@@ -16,7 +16,7 @@
                     <p><a href="" v-text="page.title"></a></p>
                     <div>
                         <span v-text="page.special" v-if="page.special"></span>
-                        <span class="price" v-text="page.price"></span>
+                        <span class="pricess" v-text="page.price"></span>
                     </div>
                 </li>
                 
@@ -135,7 +135,7 @@ export default {
                            color: #ae1033;
                            font-size: .277778rem;
                         }
-                        .price{
+                        .pricess{
                             color: #178347;
                             font-size: .362963rem;
                            
