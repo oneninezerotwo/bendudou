@@ -13,10 +13,16 @@
     "mint-ui": "^2.2.13",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
+<<<<<<< HEAD
     "vant": "^1.6.22",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
     "vuex": "^3.1.1",
+=======
+    "vant": "^1.6.23",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6",
+>>>>>>> Heyvens
     "weui": "^2.0.0"
   },
   "devDependencies": {

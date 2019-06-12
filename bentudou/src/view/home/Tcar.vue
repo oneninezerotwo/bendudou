@@ -1,6 +1,7 @@
 <template>
     
     <div id="car">
+<<<<<<< HEAD
                <!-- <div class="car">
                     <img :src="car" alt="" class="car_img">
                    <div>
@@ -76,12 +77,18 @@ export default {
 
 }
 </script>
+=======
+        购物车
+    </div>
+</template>
+>>>>>>> Heyvens
 
 <style  lang="scss" scoped>
 
 #car{
     margin-top: 50px;
     display: flex;
+<<<<<<< HEAD
     
     .car{
         background: #f8f8f8;
@@ -221,6 +228,9 @@ export default {
         }
         }
     }
+=======
+
+>>>>>>> Heyvens
 }
 
 </style>
