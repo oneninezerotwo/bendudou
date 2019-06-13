@@ -1144,14 +1144,14 @@ textarea {
     line-height: 1em
 }
 
-.price:before {
+/* .price:before {
     content: "\A5";
     position: absolute;
     left: 0;
     top: 0;
     font-size: .76em;
     text-decoration: none
-}
+} */
 
 .more:after {
     content: "";

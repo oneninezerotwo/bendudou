@@ -15,6 +15,10 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import { Search,Swipe, SwipeItem } from 'mint-ui'
 
+import { NavBar } from 'vant';
+Vue.use(NavBar);
+
+
 import { CouponCell, CouponList,Card} from 'vant';
 
 Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem).use(Vant).use(Card).use(SwipeItem).use(CouponCell).use(CouponList).use(Search.name)

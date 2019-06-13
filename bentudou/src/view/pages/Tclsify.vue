@@ -1,23 +1,20 @@
 <template>
   <div id="classify">
     <Tsearch/>
-    <Ttou/>
-    <Tliebiao/>
+    <Tlist/>
   </div>
 </template>
 
 <script>
 import Tsearch from "../../components/home/Tsearch";
-import Ttou from "../../components/home/Ttou";
-import Tliebiao from "../../components/list/Tliebiao";
+import Tlist from "../../components/list/Tlist";
 export default {
   data() {
     return {};
   },
   components: {
     Tsearch,
-    Ttou,
-    Tliebiao
+    Tlist,
   }
 };
 </script>
