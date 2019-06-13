@@ -5,7 +5,8 @@
         <img :src="logo1" alt>
       </div>
       <div v-show="!shows()" class="jiantou zi">
-        <img :src="goto" alt v-show="names()=='购物车'&&names()=='我的土豆'">
+        <img :src="goto" alt v-show="names()=='购物车'&&names()=='我的土豆' && names()=='商品详情'">
+        <img :src="goto" alt v-show="names()=='商品详情'" @click="togo">
       </div>
       <div v-show="!shows()" class="titles zi" v-text="names()"></div>
       <div v-show="!shows()" class="jiantou zi"></div>
@@ -41,6 +42,9 @@ export default {
     },
     names() {
       return this.$store.state.names;
+    },
+    togo(){
+      this.$router.go(-1)
     }
   },
   mounted() {

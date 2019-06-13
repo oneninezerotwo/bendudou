@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 import Thome from './view/Thome'
 
 import Tlogin from './view/Tlogin'
-
+import Tdetails from './view/Tdetails'
 //二级路由
 import Thomes from './view/home/Thomes'
 import Tclsify from './view/home/Tclsify'
@@ -53,6 +53,11 @@ const router = new VueRouter({
       path: '/Tlogin',
       component: Tlogin,
       name: 'Tlogin'
+    },
+    {
+      path: '/Tdetails',
+      component: Tdetails,
+      name: 'Tdetails'
     },
   ]
 })

@@ -15,9 +15,9 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import { Search,Swipe, SwipeItem } from 'mint-ui'
 
-import { CouponCell, CouponList,Card} from 'vant';
+import { CouponCell, CouponList,Card,GoodsAction} from 'vant';
 
-Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem).use(Vant).use(Card).use(SwipeItem).use(CouponCell).use(CouponList).use(Search.name)
+Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem).use(Card).use(SwipeItem).use(CouponCell).use(CouponList).use(Search.name).use(GoodsAction).use(Vant)
 //cookie的增删取
 import {setCookie,getCookie,delCookie} from './tcookie'
 Vue.prototype.$tcookie = {

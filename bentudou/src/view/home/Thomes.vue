@@ -18,8 +18,13 @@ import  Tcontentzre from '../../components/home/Tcontentzre'
 export default {
     data(){
         return{
-
+            name:'',
+            isok:true
         }
+    },
+    created(){
+             this.$store.state.shows = this.isok
+              this.$store.state.names = this.names
     },
     components:{
         Tsearch,

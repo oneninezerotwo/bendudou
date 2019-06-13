@@ -3,11 +3,12 @@
     <!---->
     <div data-v-172bb70c data-v-bc186c1a class="content app-view app-view-with-footer">
       <header data-v-172bb70c class="hd">
-        <router-link to="/signin" data-v-172bb70c class="user ui-flex align-center">
+        <router-link to="/Tlogin" data-v-172bb70c class="user ui-flex align-center">
           <div data-v-172bb70c class="img">
             <img data-v-172bb70c src>
           </div>
-          <div data-v-172bb70c class="name">登录/注册</div>
+          <div data-v-172bb70c class="name" v-if="!name">登录/注册</div>
+           <div data-v-172bb70c class="name" v-else v-text="name"></div>
         </router-link>
         <!---->
       </header>
@@ -82,7 +83,15 @@
           </a>
         </li>
       </ul>
-      <div data-v-172bb70c class="ui-line"></div>
+       <div data-v-172bb70c class="ui-line"></div>
+      <ul  class="tuichu" @click="delecookie" v-if="zhuantai">
+        <a href="###">
+          退出
+        </a>
+      </ul>
+      <div data-v-172bb70c class="ui-line">
+        
+      </div>
     </div>
   </div>
 </template>
@@ -90,24 +99,35 @@
 export default {
   data() {
     return {
-     
+            name:'',
+            zhuantai:false
     };
   },
-  // beforeCreate(){
-  //                 let a = this.$tcookie.getCookie('name')   
-  //                   console.log(a)
-  //                   if(!a){
-  //                     this.$router.push({
-  //                       path:"/Tlogin"
-  //                     })
-  //                   }else{
-                      
-  //                     this.$router.push({
-  //                       path:"Tmine"
-  //                     })
-  //                   }
-  //       },
+  created(){
+      let getcookie = this.$tcookie.getCookie('name');
+          if(getcookie){
+            this.name = getcookie
+            this.zhuantai = true
+          }else{
+            this.name =''
+          }
+        
+  },
   methods: {
+    // tologin(){
+    //         this.router.push({
+    //             path:'/Tlogin'
+    //         })
+    //     },
+        delecookie(){
+           this.$tcookie.delCookie('name');
+           this.$tcookie.delCookie('pasw');
+           let a=this.$tcookie.getCookie('name')
+           if(!a){
+             this.zhuantai = false
+             this.name =''
+           }
+        }
   }
 };
 </script>
@@ -343,5 +363,14 @@ export default {
   font-size: 0.28rem;
   font-style: normal;
   color: rgba(0, 0, 0, 0.87);
+}
+.tuichu{
+ background: red;
+}
+.tuichu>a{
+  text-align: center;
+  
+  font-size: 20px;
+  color: white;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="car">
-    <!-- <div class="car">
+    <div class="car" v-if="contents.length==0">
                     <img :src="car" alt="" class="car_img">
                    <div>
                        <ul v-if="contents">
@@ -21,15 +21,15 @@
                             </li>
                         </ul>
                    </div>
-    </div>-->
-    <div class="cars" v-if="contents">
+    </div>
+    <div class="cars" v-else>
       <van-card
         v-for="(ab,index) in contents"
         :key="index"
         :tag="ab.control"
         :price="ab.price"
         :desc="ab.title"
-        title="商品标题"
+        title="商品名字不想写"
         :thumb="ab.imgages"
         class="vancard"
       >
@@ -48,23 +48,10 @@
           <van-button size="mini" class="jia" @click="addnum(index)">+</van-button>
         </div>
       </van-card>
-      <!-- <Tclose  class="closse"/> -->
       <div class="close">
-        <!-- <van-submit-bar
-                        :price=price
-                        button-text="提交订单"
-                        
-                        class="closest"
-                        >
-                        <van-checkbox v-model="checked" class="checkeds" @click="tactives" :class="{'van-checkbox__icon--checked':isok}">全选</van-checkbox>
-                        <span slot="tip">
-                            你的收货地址不支持同城送, <span>修改地址</span>
-                        </span>
-        </van-submit-bar>-->
         <van-submit-bar 
         :price="price"
-         button-text="提交订单" 
-        
+         button-text="提交订单"      
          class="closest">
           <div class="radioss" @click="tactives">
             <i
@@ -86,6 +73,7 @@
 </template>
 <script>
 import car from '../../assets/car.png'
+import vm from '../../bus'
 // import Tclose from  '../../components/car/Tclose'
 export default {
         data(){
@@ -98,6 +86,7 @@ export default {
                   pages:0,//判断高亮的长度是否与商品的长度一样
                   pricss:1,//总价格
                   // decimallength:2
+                  cons:[]
             }
         },
         beforeCreate(){
@@ -115,11 +104,16 @@ export default {
         },
         async created(){
                     let {data} = await this.$axios.get('/api/home1',{
-
                     })
-                        this.contents = [...data.data]   
-                        // console.log(this.contents)     
-                   
+                    
+                        
+                        this.contents = [...data.data]      
+                    //  await  vm.$on('tocar',(data)=>{
+                    //       this.contents = [...this.contents,data]
+                    //       console.log(this.price)
+                    //       console.log('第一次'+this.contents.length)
+                          
+                    //   })
         },
         methods:{
             //最大加到99
@@ -193,8 +187,6 @@ export default {
            
               contents: {
               handler() {//这个handler是固定的
-            // console.log(newValue); 
-            // console.log(oldValue);
              for(let i in this.contents){
                     if(this.contents[i].nums>=99){
                         this.contents[i].nums = 99

@@ -5,14 +5,17 @@
       <div class="login">
           <div class="login_t">
                 <div>
-                    <input type="text" value="手机号">
+                    <input type="text" value="手机号" v-model="name">
                 </div>
                 <div>
-                    <input type="text" value="密码">
+                    <input type="text" value="密码" v-model="pasw">
                 </div>
                 <p>忘记密码？</p>
-                <button>
+                <button @click="adcooke">
                     登陆
+                </button>
+                <button @click="togo">
+                    取消
                 </button>
           </div>
       </div>    
@@ -22,12 +25,15 @@
 
 <script>
 import Theader from '../components/Theader'
+// import { watch } from 'fs';
 export default {
     data(){
         return{
                 show:'true',
                 titles:'登陆',
-                titless:'注册'
+                titless:'注册',
+                name:'手机号',
+                pasw:'密码'
 
         }
     },
@@ -38,7 +44,28 @@ export default {
     },
     components:{
         Theader
-    }
+    },
+    methods:{
+        adcooke(){       
+         this.$tcookie.setCookie('name',this.name,7)   
+         this.$tcookie.setCookie('pasw',this.pasw,7)
+         let a=this.$tcookie.getCookie('name')
+         if(a){
+             this.$router.go(-2)
+         }                              
+        },
+        togo(){
+             this.$router.go(-1)
+        }
+        
+    },
+    // watch:{
+    //     name:{
+    //         handler(a){
+               
+    //         }
+    //     }
+    // }
 }
 </script>
 <style  lang="scss" scoped>

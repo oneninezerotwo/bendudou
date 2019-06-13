@@ -12,7 +12,7 @@
                                 page.zt>"1"?page.zt=="3"?"yellows":"purples":"greens"          
                     '>        
                     </span>
-                    <img :src="page.imgs" alt="">
+                    <img :src="page.imgs" alt="" @click="toTdetails(page)">
                     <p><a href="" v-text="page.title"></a></p>
                     <div>
                         <span v-text="page.special" v-if="page.special"></span>
@@ -29,6 +29,7 @@
 import datu from '../../assets/images/home/datu1.png'
 import datu1 from '../../assets/images/home/datu2.png'
 import datu2 from '../../assets/images/home/datu3.png'
+import vm from '../../bus'
 export default {
         data(){
             return{
@@ -55,6 +56,18 @@ export default {
 
                     this.homedata = [...data.data]
                    
+            },
+            methods:{
+               async toTdetails(page){
+
+                  await this.$router.push({
+                        path:'/Tdetails'
+                    })
+                  await vm.$emit('tsetdatas',page)
+                },
+                // tsetdatas(iemt){
+                    
+                // }
             }
 }
 </script>

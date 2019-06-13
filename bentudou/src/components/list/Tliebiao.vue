@@ -8,7 +8,7 @@
         </li>
       </ul>
     </div>
-    <div @click="setcook" class="cs">
+    <!-- <div @click="setcook" class="cs">
       设置
     </div>
     <div @click="shang" class="cs">
@@ -16,7 +16,7 @@
     </div>
     <div  @click="qu" class="cs">
       取值
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -53,18 +53,18 @@ export default  {
 
       // console.log(123)
     },
-    setcook(){
-                    this.$tcookie.setCookie('name','aitaohahha',7)
+    // setcook(){
+    //                 this.$tcookie.setCookie('name','aitaohahha',7)
                    
-                },
-        shang(){
-            this.$tcookie.delCookie('name');
-          
-        },
-        qu(){
-          let a=this.$tcookie.getCookie('name')
-          //  console.log(a)
-        }
+    //             },
+    //     shang(){
+    //         this.$tcookie.delCookie('name');
+    //        this.$tcookie.delCookie('pasw');
+    //     },
+    //     qu(){
+    //       let a=this.$tcookie.getCookie('name')
+    //       //  console.log(a)
+    //     }
             
     
   }

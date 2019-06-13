@@ -7,45 +7,53 @@
                           
                             {
                                 "control":"保税",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201711/1511170101511_227e30ed88d94199ac9a26811852aad5.jpg_w200",
                                 "title":"Aveeno 艾维诺 婴儿湿疹用保湿沐浴乳 236毫升",
                                 "special":"特价",
                                 "price":"55",
                                 "zt":0,
                                 "nums":1,
+                                "froms":"保税自营2号仓库",
                                 "actives":false,
                                 "total":"55"
                             },
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201808/1534837729848_fd197a9549414beaa3c0decc693a4b8d.jpg_w200",
                                 "title":"LaTourangelle 拉杜蓝乔核桃油 500ml",
                                 "special":"特价",
                                 "price":"198",
                                 "zt":3,
                                 "nums":1,
+                                "froms":"保税自营2号仓库",
                                 "actives":false,
                                 "total":"198"
                             },
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201811/1543204935224_0d3af5d8213e4ffe8e1c9690f8499760.jpg_w200",
                                 "title":"雅培Abbott澳版小安素营养粉香草850g",
                                 "special":"",
                                 "price":"￥278",
                                 "zt":3,
                                 "nums":1,
+                                "froms":"保税自营2号仓库",
                                 "actives":false,
                                 "total":"278"
                             },
                             {
                                 "control":"一般贸易",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201901/1546939597055_18ff974d6b7a414c823d36128e5b488e.jpeg_w200",
                                 "title":"加拿大George’s 乔治霜 长效保湿霜特效干性皮肤霜450g",
                                 "special":"特价",
                                 "price":"198",
                                 "zt":2,
                                 "nums":1,
+                                "froms":"保税自营2号仓库",
                                 "actives":false,
                                 "total":"198"
                             }
@@ -57,22 +65,25 @@
                           
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201808/1535338044924_e777ab81ca904ad2afbecde79a812719.jpg_w200",
                                 "title":"[costco直供]柯克兰Kirkland Vitamin D3 维生素D3 2000IU 600粒",
                                 "special":"",
                                 "price":"160",
                                 "zt":3,
                                 "nums":1,
+                                "froms":"保税自营2号仓库",
                                 "actives":false,
                                 "total":"160"
                             },
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201901/1546919482124_09ca56eb3eaf49cda82ab8b2db2b5702.jpg_w200",
                                 "title":"[costco直供]Tylenol Infants 泰诺婴儿发退烧止痛滴剂 60ml2瓶 樱桃味",
                                 "special":"特价",
                                 "price":"163",
-                               
+                                "froms":"保税自营2号仓库",
                                 "zt":3,
                                 "nums":1,
                                 "actives":false,
@@ -80,11 +91,12 @@
                             },
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201810/1540541857844_0c069819729748ddb14c0990d08ec153.jpg_w200",
                                 "title":"[costco直供]Nature Made备孕孕期补充DHA综合维生素矿物质150粒",
                                 "special":"",
                                 "price":"222",
-                               
+                                "froms":"保税自营2号仓库",
                                 "zt":3,
                                 "nums":1,
                                 "actives":false,
@@ -92,11 +104,12 @@
                             },
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201808/1535337540198_5434fd12512b4c468ea290d060bec11a.jpg_w200",
                                 "title":"[costco直供]柯克兰Kirkland HCL盐酸氨基葡萄糖MSM维骨力 375粒",
                                 "special":"",
                                 "price":"198",
-                               
+                                "froms":"保税自营2号仓库",
                                 "zt":3,
                                 "nums":1,
                                 "actives":false,
@@ -110,11 +123,12 @@
                           
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201806/1530499627645_705d8803907c40638d53fd85920b6080.jpg_w200",
                                 "title":"ESTEE LAUDER/雅诗兰黛 粉色面霜50ml+粉色眼霜5ml+紫色精华15ml+洗面奶30ml",
                                 "special":"特价",
                                 "price":"941",
-                               
+                                "froms":"保税自营2号仓库",
                                 "zt":3,
                                 "nums":1,
                                 "actives":false,
@@ -122,11 +136,12 @@
                             },
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201608/1472544485577_ae911bf2702f4b60818910807186c6a2.jpg_w200",
                                 "title":"Its skin伊思红参眼霜 15ml*2",
                                 "special":"",
                                 "price":"185",
-                            
+                                "froms":"保税自营2号仓库",
                                 "zt":3,
                                 "nums":1,
                                 "actives":false,
@@ -134,22 +149,24 @@
                             },
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201708/1502274576943_a82e8cd61ab649fd9e99c5f2debe9b48.jpg_w200",
                                 "title":"Dr.jart蒂佳婷V7素颜霜 50ml",
                                 "special":"特价",
                                 "price":"200",
-                          
+                                "froms":"保税自营2号仓库",
                                 "zt":3,
                                 "nums":1,
                                 "total":"200"
                             },
                             {
                                 "control":"直邮",
+                                "mimgse":"https://img.westwinglife.cn/data/warehouseIcon/1492175252783_6c8d78d9061541c3a2c8c34bd56840ec.png",
                                 "imgs":"https://img.westwinglife.cn/data/goods/callery/201608/1473301964983_b7b5ecb078a4463b989d0818e624997f.jpg_w200",
                                 "title":"LANEIGE 兰芝 清爽套盒",
                                 "special":"",
                                 "price":"339",
-                                
+                                "froms":"保税自营2号仓库",
                                 "zt":3,
                                 "nums":1,
                                 "actives":false,
