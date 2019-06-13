@@ -18,7 +18,13 @@ import { Search,Swipe, SwipeItem } from 'mint-ui'
 import { CouponCell, CouponList,Card} from 'vant';
 
 Vue.use(MintUI).use(Search).use(Swipe).use(SwipeItem).use(Vant).use(Card).use(SwipeItem).use(CouponCell).use(CouponList).use(Search.name)
- 
+//cookie的增删取
+import {setCookie,getCookie,delCookie} from './tcookie'
+Vue.prototype.$tcookie = {
+  setCookie,
+  getCookie,
+  delCookie
+}
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false
 

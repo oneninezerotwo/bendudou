@@ -2,11 +2,20 @@
   <div id="liebiao">
     <div class="liebiao">
       <ul>
-        <li v-for="(a ,index) in liebiao" :key="index">
+        <li v-for="(a ,index) in liebiao" :key="index"  >
           <img :src="a.img" alt>
           <p v-text="a.name"></p>
         </li>
       </ul>
+    </div>
+    <div @click="setcook" class="cs">
+      设置
+    </div>
+    <div @click="shang" class="cs">
+        删除
+    </div>
+    <div  @click="qu" class="cs">
+      取值
     </div>
   </div>
 </template>
@@ -42,8 +51,22 @@ export default  {
       // 跳转列表
       // this.$router.push({path:"/Maternal "});
 
-      console.log(123)
-    }
+      // console.log(123)
+    },
+    setcook(){
+                    this.$tcookie.setCookie('name','aitaohahha',7)
+                   
+                },
+        shang(){
+            this.$tcookie.delCookie('name');
+          
+        },
+        qu(){
+          let a=this.$tcookie.getCookie('name')
+          //  console.log(a)
+        }
+            
+    
   }
 };
 </script>
@@ -53,6 +76,11 @@ export default  {
 #liebiao {
   display: flex;
   flex: 2;
+}
+.cs{
+  width: 300px;
+  height: 200px;
+  background: red;
 }
 ul {
   justify-content: center;

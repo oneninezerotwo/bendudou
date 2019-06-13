@@ -93,6 +93,20 @@ export default {
      
     };
   },
+  // beforeCreate(){
+  //                 let a = this.$tcookie.getCookie('name')   
+  //                   console.log(a)
+  //                   if(!a){
+  //                     this.$router.push({
+  //                       path:"/Tlogin"
+  //                     })
+  //                   }else{
+                      
+  //                     this.$router.push({
+  //                       path:"Tmine"
+  //                     })
+  //                   }
+  //       },
   methods: {
   }
 };

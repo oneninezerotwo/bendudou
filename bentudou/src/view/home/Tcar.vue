@@ -61,7 +61,11 @@
                             你的收货地址不支持同城送, <span>修改地址</span>
                         </span>
         </van-submit-bar>-->
-        <van-submit-bar :price="price" button-text="提交订单" class="closest">
+        <van-submit-bar 
+        :price="price"
+         button-text="提交订单" 
+        
+         class="closest">
           <div class="radioss" @click="tactives">
             <i
               class="van-icon van-icon-success"
@@ -69,7 +73,12 @@
                                     'bulssss':isok
                                 }"
             ></i>
+           
           </div>
+          <div class="zonjia"  v-text="price">
+                <!-- ￥{{}} -->
+          </div>
+           全选
         </van-submit-bar>
       </div>
     </div>
@@ -87,25 +96,40 @@ export default {
                   price:0,
                   checked:"dage",
                   pages:0,//判断高亮的长度是否与商品的长度一样
-                  pricss:1//总价格
+                  pricss:1,//总价格
+                  // decimallength:2
             }
+        },
+        beforeCreate(){
+                  let a = this.$tcookie.getCookie('name')   
+                    // console.log(a)
+                    if(a){
+                      this.$router.push({
+                        path:"Tcar"
+                      })
+                    }else{
+                      this.$router.push({
+                        path:"/Tlogin"
+                      })
+                    }
         },
         async created(){
                     let {data} = await this.$axios.get('/api/home1',{
 
                     })
                         this.contents = [...data.data]   
-                        // console.log(this.contents)              
-        },
-        components:{
-            // Tclose
+                        // console.log(this.contents)     
+                   
         },
         methods:{
             //最大加到99
                 addnum(index){
                        if(this.contents[index].nums<99){
-                           this.contents[index].nums++;
-                           this.contents[index].price = this.contents[index].nums * this.contents[index].total
+                         this.contents[index].nums++;
+                         this.contents[index].price = this.contents[index].nums * this.contents[index].total
+                         if(this.contents[index].actives==true){
+                            this.price += (this.contents[index].total)*1
+                         }
 
                        }else{
                            this.contents[index].nums=99;
@@ -117,6 +141,9 @@ export default {
                      if(this.contents[index].nums>1){  
                            this.contents[index].nums--;
                            this.contents[index].price = this.contents[index].nums * this.contents[index].total
+                           if(this.contents[index].actives==true){
+                            this.price -= (this.contents[index].total)*1
+                         }
                        }else{
                            this.contents[index].nums=1;
                            this.contents[index].price = this.contents[index].nums * this.contents[index].total
@@ -127,6 +154,11 @@ export default {
                         this.isok = !this.isok
                         for(let i =0;i<this.contents.length;i++){
                             this.contents[i].actives = this.isok
+                           if(this.isok==true){
+                              this.price += this.contents[i].price*1
+                           }else{
+                              this.price = 0
+                           }
                         }
                 },
                 //单个变高亮
@@ -144,9 +176,18 @@ export default {
                        }else{
                             this.isok = false
                        }
+                      
+                         if(this.contents[index].actives===true){
+                            this.price += (this.contents[index].price)*1
+                            
+                       }else if(this.contents[index].actives===false){
+                                this.price -= (this.contents[index].price)*1
+                       }
+                      
                        
 
-                }
+                },
+                
         },
         watch:{
            
@@ -160,18 +201,7 @@ export default {
                     }else if(this.contents[i].nums<=1){
                         this.contents[i].nums = 1
                     }
-                    // console.log(this.contents[i].price)
-                    console.log(this.price)
-                    if(this.contents[i].actives===true || this.isok===true){
-                                // this.price = 
-                            this.price += (this.contents[i].price)*1
-                            
-                    }
-                  
-                    if(this.pricss===0){
-                        console.log(this.pricss)
-                        this.price -= (this.contents[i].price)*1
-                    }
+                    
              }
           },
           // 深度监听 监听对象，数组的变化
@@ -286,10 +316,25 @@ export default {
       position: relative;
       .closest {
         bottom: 1.324074rem;
+        padding-left: 45px;
+        .zonjia{
+          position: absolute;
+          width: 48px;
+          height: 28px;
+          top: 13px;
+          right: 121px;
+          // text-align: center;
+          line-height: 28px;
+          background: white;
+          z-index: 3;
+          font-size: 20px;
+          color: red;
+        }
+        
         .radioss {
           position: absolute;
           left: 10px;
-          top: 18px;
+          top: 14px;
           display: inline-block;
           background-color: white;
           border-radius: 100%;

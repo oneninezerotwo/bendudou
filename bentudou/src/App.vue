@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style>
-@import '../src/assets/style/loading.css';
+/* @import '../src/assets/style/loading.css'; */
 @import '../src/assets/style/xmdetail.css';
 
 *{
