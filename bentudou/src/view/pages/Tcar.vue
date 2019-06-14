@@ -73,8 +73,7 @@
 </template>
 <script>
 import car from '../../assets/car.png'
-import vm from '../../bus'
-// import Tclose from  '../../components/car/Tclose'
+// import vm from '../../bus'
 export default {
         data(){
             return{

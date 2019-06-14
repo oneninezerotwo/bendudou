@@ -9,13 +9,12 @@ import Thome from './view/Thome'
 import Tlogin from './view/Tlogin'
 import Tdetails from './view/Tdetails'
 //二级路由
-import Thomes from './view/home/Thomes'
-import Tclsify from './view/home/Tclsify'
-import Tcar from './view/home/Tcar'
-import Tmine from './view/home/Tmine'
+import Thomes from './view/pages/Thomes'
+import Tclsify from './view/pages/Tclsify'
+import Tcar from './view/pages/Tcar'
+import Tmine from './view/pages/Tmine'
 
-// import Maternal  from './components/list/home/Maternal'
-
+import Tgoods from './components/list/Tgoods'
 const router = new VueRouter({
   routes: [
     //从定向
@@ -47,6 +46,12 @@ const router = new VueRouter({
           component: Tmine,
           name: 'Tmine'
         },
+        {
+          name: 'Tgoods',
+          component: Tgoods,
+          path: '/Tgoods',
+    
+        }
       ]
     },
     {

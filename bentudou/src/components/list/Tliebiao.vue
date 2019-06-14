@@ -48,23 +48,9 @@ export default  {
   },
   methods:{
     toMaternal(){
-      // 跳转列表
-      // this.$router.push({path:"/Maternal "});
-
-      // console.log(123)
+     
     },
-    // setcook(){
-    //                 this.$tcookie.setCookie('name','aitaohahha',7)
-                   
-    //             },
-    //     shang(){
-    //         this.$tcookie.delCookie('name');
-    //        this.$tcookie.delCookie('pasw');
-    //     },
-    //     qu(){
-    //       let a=this.$tcookie.getCookie('name')
-    //       //  console.log(a)
-    //     }
+    
             
     
   }
