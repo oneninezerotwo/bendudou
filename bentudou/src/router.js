@@ -14,7 +14,6 @@ import Tclsify from './view/pages/Tclsify'
 import Tcar from './view/pages/Tcar'
 import Tmine from './view/pages/Tmine'
 
-import Tgoods from './components/list/Tgoods'
 const router = new VueRouter({
   routes: [
     //从定向
@@ -46,12 +45,6 @@ const router = new VueRouter({
           component: Tmine,
           name: 'Tmine'
         },
-        {
-          name: 'Tgoods',
-          component: Tgoods,
-          path: '/Tgoods',
-    
-        }
       ]
     },
     {
